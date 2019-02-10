@@ -26,6 +26,8 @@ Operations Completed :
 		 endpoint : /user/alluser
 	b. PUT : 
 		endpoint : /user
+	           with json object in payload
+
 	c. DELETE : 
 		endpoint : /delete/user/{userId}
 	d. UPDATE : 
@@ -42,7 +44,7 @@ JSON Object Format:
 
 2. File System as database and give option to configure storage format via onfiguration file ( json or yaml ) - Concept of DI
 		-default format is json 
-		-you can change by setting value of storage.format either set it to json or yaml
+		-you can change by setting value of storage.format either set it to json or yaml in application.properties file
  In case of json, it will create json file on put request
  In case of Yaml, It will create yaml file on put request
 
