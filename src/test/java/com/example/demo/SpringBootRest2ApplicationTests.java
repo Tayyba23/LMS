@@ -50,15 +50,6 @@ public class SpringBootRest2ApplicationTests {
     	ObjectMapper mapper = new ObjectMapper();
     	mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
     	 
-    	
-//         this.mockMvc.perform(post("/services/latest/validation/dsd")
-//    	            .header("Origin", BASE_URL)
-//    	            .header("Accept", "application/json")
-//    	            .content(mapper.writeValueAsBytes(mockUser))
-//    	            .contentType(MediaType.APPLICATION_JSON))
-//    	            .andExpect(status().isOk())
-//    	            .andDo(MockMvcResultHandlers.print());
-    	
     	  this.mockMvc.perform(post("/user")
     	            .contentType(MediaType.APPLICATION_JSON)
     	            .content(mapper.writeValueAsBytes(mockUser)))
