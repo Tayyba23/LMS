@@ -46,6 +46,7 @@ JSON Object Format:
  In case of json, it will create json file on put request
  In case of Yaml, It will create yaml file on put request
 
+ Note : File handling is not added for every CRUD operation except POST method beause of long power failures at home by Govt.
 
 3. All API Requests should be logged to file 
 	- API Requests logged to file in \logs\Application.log
@@ -54,18 +55,6 @@ JSON Object Format:
 UNIT Tests 
 
 -Write Unit Test for Create Function i.e. post request
-
-
-
-		
-
- 
-
-
-
-
-
-
 
 Note:
 -Eclipse ( Oxygen used to develop)
